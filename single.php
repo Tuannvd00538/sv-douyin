@@ -90,7 +90,7 @@
             }
             $key = getKey($url);
             $apiLinkVideo = connectApi($id, $key);
-            echo "<video controls><source src='" . getRealDownloadLink($apiLinkVideo) . "'>Your browser does not support HTML5 video.</video>";
+            echo getRealDownloadLink($apiLinkVideo);
         } else {
             echo "<p class='text-danger'>Bạn vui lòng nhập url cần download</p>";
         }
